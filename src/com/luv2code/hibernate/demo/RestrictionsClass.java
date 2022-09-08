@@ -23,7 +23,7 @@ public class RestrictionsClass {
 		session.beginTransaction();
 		Criteria ctr = session.createCriteria(Student.class);
 		//Criterion c1 = Restrictions.ne("firstName", "laalu prasad");
-		Criterion c1 = Restrictions.idEq(3);
+		Criterion c1 = Restrictions.idEq(8);
 		ctr.add(c1);
 		System.out.println("-------------here printing start");
 		List<Student> list = ctr.list();
