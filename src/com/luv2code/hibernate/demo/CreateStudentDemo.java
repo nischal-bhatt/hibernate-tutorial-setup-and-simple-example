@@ -18,7 +18,7 @@ public class CreateStudentDemo {
 		Session session = fac.getCurrentSession();
 		
 		try {
-			Student temp = new Student("bheem","singh","singh@email.com");
+			Student temp = new Student("raz","deen","singh@email.com");
 			session.beginTransaction();
 			session.save(temp);
 			session.getTransaction().commit();

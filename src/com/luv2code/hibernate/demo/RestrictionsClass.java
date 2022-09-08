@@ -22,8 +22,8 @@ public class RestrictionsClass {
 		Session session = fac.getCurrentSession();
 		session.beginTransaction();
 		Criteria ctr = session.createCriteria(Student.class);
-		//Criterion c1 = Restrictions.ne("firstName", "laalu prasad");
-		Criterion c1 = Restrictions.idEq(8);
+		//Criterion c1 = Restrictions.ne("lastName", "deen");
+		Criterion c1 = Restrictions.eq("lastName", "deen");
 		ctr.add(c1);
 		System.out.println("-------------here printing start");
 		List<Student> list = ctr.list();
